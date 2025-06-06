@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Nairobi, the vibrant capital of Kenya, is a modern city with unmatched wildlife access. Imagine sipping cocktails at a rooftop bar with giraffes roaming nearby, or experiencing world-class museums, cuisine, and luxury shopping, all just minutes from Nairobi National Park. Nairobi blends raw African beauty with luxurious urban living, offering travelers a truly unique experience.
       `,
       howToReach: "Fly into Jomo Kenyatta International Airport. Uber and private car pickups available.",
-      image: "img/nairobi.jpg",
+      image: "img/nairobi.png",
       packages: [
         {
           name: "Giraffe Manor Experience",
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           name: "Luxury Safari at Emakoko Lodge",
-          image: "img/emakoko.jpg",
+          image: "img/emakoko.png",
           description: "Stay in a riverside luxury lodge inside Nairobi National Park. Enjoy game drives, massages, and fine dining.",
           price: "$1,400 / Night",
           location: "Inside Nairobi National Park"
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       packages: [
         {
           name: "Luxury Beach Resort Stay",
-          image: "img/mombasa-resort.jpg",
+          image: "img/lamu.jpg",
           description: "Experience 5-star oceanfront luxury with private beach access, spa treatments, and gourmet dining.",
           price: "$1,000 / Night",
           location: "Nyali Beach, Mombasa"
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
         The Maasai Mara is Kenya’s most famous wildlife reserve, home to the Great Migration and the Big Five. Experience exclusive game drives in luxury tents with private guides, hot air balloon safaris at dawn, and authentic Maasai cultural visits.
       `,
       howToReach: "Fly into local Mara airstrips or enjoy a scenic 5-6 hour drive from Nairobi.",
-      image: "img/maasai-mara.jpg",
+      image: "img/masai-mara.jpg",
       packages: [
         {
           name: "Luxury Tented Safari Camp",
