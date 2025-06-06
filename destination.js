@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Mombasa is a coastal paradise famed for its white sandy beaches, historical forts, and rich Swahili heritage. Relax in five-star beach resorts, explore ancient forts, and dive in vibrant coral reefs. At night, savor gourmet seafood paired with the rhythmic beats of taarab music.
       `,
       howToReach: "Fly into Moi International Airport or take the scenic SGR train from Nairobi.",
-      image: "img/mombasa.jpg",
+      image: "img/mombasa-snorkel.jpg",
       packages: [
         {
           name: "Luxury Beach Resort Stay",
