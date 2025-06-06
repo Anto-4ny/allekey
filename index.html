@@ -307,97 +307,131 @@
 </div>
 <!-- Services End -->
 
-  <!-- Destination Start -->
+<!-- Destination Start -->
 <div class="container-fluid destination py-5">
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-            <h5 class="section-title px-3">Destination</h5>
+            <h5 class="section-title px-3">Destinations</h5>
             <h1 class="mb-0">Popular Kenyan Destinations</h1>
         </div>
+
         <div class="tab-class text-center">
             <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
                 <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-kenya">
-                        <span class="text-dark" style="width: 150px;">Kenya</span>
+                    <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-nairobi">
+                        <span class="text-dark" style="width: 120px;">Nairobi</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-mombasa">
+                        <span class="text-dark" style="width: 120px;">Mombasa</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-nakuru">
+                        <span class="text-dark" style="width: 120px;">Nakuru</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-others">
+                        <span class="text-dark" style="width: 120px;">Other Places</span>
                     </a>
                 </li>
             </ul>
+
             <div class="tab-content">
-                <div id="tab-kenya" class="tab-pane fade show p-0 active">
-                    <div class="row g-4">
-                        <!-- Nairobi -->
+                <!-- Nairobi Tab -->
+                <div id="tab-nairobi" class="tab-pane fade show active">
+                    <div class="row g-4 justify-content-center">
                         <div class="col-lg-4">
-                            <div class="destination-img">
+                            <div class="destination-img position-relative">
                                 <img class="img-fluid rounded w-100" src="img/nairobi.png" alt="Nairobi">
-                                <div class="destination-overlay p-4">
-                                    <a href="destination.html?place=nairobi" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">Nairobi</h4>
-                                    <a href="destinations.html?place=nairobi" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                <div class="bg-primary text-white text-start p-3 rounded-bottom">
+                                    <h4 class="mb-2">Nairobi</h4>
+                                    <p class="mb-2">Capital city with safari, nightlife, and culture.</p>
+                                    <a href="destinations.html?place=nairobi" class="btn btn-light btn-sm rounded-pill">View All <i class="fa fa-arrow-right ms-2"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <!-- Mombasa -->
+                    </div>
+                </div>
+
+                <!-- Mombasa Tab -->
+                <div id="tab-mombasa" class="tab-pane fade">
+                    <div class="row g-4 justify-content-center">
                         <div class="col-lg-4">
-                            <div class="destination-img">
+                            <div class="destination-img position-relative">
                                 <img class="img-fluid rounded w-100" src="img/lamu.jpg" alt="Mombasa">
-                                <div class="destination-overlay p-4">
-                                    <a href="destination.html?place=mombasa" class="btn btn-primary text-white rounded-pill border py-2 px-3">15 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">Mombasa</h4>
-                                    <a href="destinations.html?place=mombasa" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                <div class="bg-primary text-white text-start p-3 rounded-bottom">
+                                    <h4 class="mb-2">Mombasa</h4>
+                                    <p class="mb-2">Historic coastal city with beaches and culture.</p>
+                                    <a href="destinations.html?place=mombasa" class="btn btn-light btn-sm rounded-pill">View All <i class="fa fa-arrow-right ms-2"></i></a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Nakuru Tab -->
+                <div id="tab-nakuru" class="tab-pane fade">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-4">
+                            <div class="destination-img position-relative">
+                                <img class="img-fluid rounded w-100" src="img/lake-nakuru.jpeg" alt="Nakuru">
+                                <div class="bg-primary text-white text-start p-3 rounded-bottom">
+                                    <h4 class="mb-2">Nakuru</h4>
+                                    <p class="mb-2">Home to Lake Nakuru, flamingos, and scenic parks.</p>
+                                    <a href="destinations.html?place=nakuru" class="btn btn-light btn-sm rounded-pill">View All <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Others Tab -->
+                <div id="tab-others" class="tab-pane fade">
+                    <div class="row g-4">
                         <!-- Diani -->
                         <div class="col-lg-4">
-                            <div class="destination-img">
+                            <div class="destination-img position-relative">
                                 <img class="img-fluid rounded w-100" src="img/diani-beach.jpg" alt="Diani">
-                                <div class="destination-overlay p-4">
-                                    <a href="destination.html?place=diani" class="btn btn-primary text-white rounded-pill border py-2 px-3">18 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">Diani Beach</h4>
-                                    <a href="destinations.html?place=diani" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                <div class="bg-primary text-white text-start p-3 rounded-bottom">
+                                    <h4 class="mb-2">Diani Beach</h4>
+                                    <p class="mb-2">White sand beaches and water adventures.</p>
+                                    <a href="destinations.html?place=diani" class="btn btn-light btn-sm rounded-pill">View All</a>
                                 </div>
                             </div>
                         </div>
                         <!-- Maasai Mara -->
                         <div class="col-lg-4">
-                            <div class="destination-img">
+                            <div class="destination-img position-relative">
                                 <img class="img-fluid rounded w-100" src="img/masai-mara.jpg" alt="Maasai Mara">
-                                <div class="destination-overlay p-4">
-                                    <a href="destination.html?place=maasai-mara" class="btn btn-primary text-white rounded-pill border py-2 px-3">30 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">Maasai Mara</h4>
-                                    <a href="destinations.html?place=maasai-mara" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Naivasha -->
-                        <div class="col-lg-4">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100" src="img/lake-nakuru.jpeg" alt="Naivasha">
-                                <div class="destination-overlay p-4">
-                                    <a href="destination.html?place=naivasha" class="btn btn-primary text-white rounded-pill border py-2 px-3">12 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">Naivasha</h4>
-                                    <a href="destinations.html?place=naivasha" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                <div class="bg-primary text-white text-start p-3 rounded-bottom">
+                                    <h4 class="mb-2">Maasai Mara</h4>
+                                    <p class="mb-2">Big Five, migration, and safari lodges.</p>
+                                    <a href="destinations.html?place=maasai-mara" class="btn btn-light btn-sm rounded-pill">View All</a>
                                 </div>
                             </div>
                         </div>
                         <!-- Kisumu -->
                         <div class="col-lg-4">
-                            <div class="destination-img">
+                            <div class="destination-img position-relative">
                                 <img class="img-fluid rounded w-100" src="img/tsavo.jpg" alt="Kisumu">
-                                <div class="destination-overlay p-4">
-                                    <a href="destination.html?place=kisumu" class="btn btn-primary text-white rounded-pill border py-2 px-3">10 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">Kisumu</h4>
-                                    <a href="destinations.html?place=kisumu" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                <div class="bg-primary text-white text-start p-3 rounded-bottom">
+                                    <h4 class="mb-2">Kisumu</h4>
+                                    <p class="mb-2">Lakeside city with cultural and eco-tourism.</p>
+                                    <a href="destinations.html?place=kisumu" class="btn btn-light btn-sm rounded-pill">View All</a>
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- /.row -->
-                </div> <!-- /#tab-kenya -->
-            </div> <!-- /.tab-content -->
+                    </div>
+                </div> <!-- /Others tab -->
+            </div>
         </div>
     </div>
 </div>
 <!-- Destination End -->
+
 
         <!-- Explore Tour Start -->
         <div class="container-fluid ExploreTour py-5">
