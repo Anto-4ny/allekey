@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Diani Beach offers one of Africa’s most stunning seaside retreats with powdery white sands and turquoise waters. Dive into coral reefs, try skydiving over the coast, or unwind at ultra-luxury beachfront villas. This tranquil paradise promises both adventure and peace.
       `,
       howToReach: "Fly into Ukunda Airstrip or drive about 45 minutes from Mombasa.",
-      image: "img/diani.jpg",
+      image: "img/diani.jpeg",
       packages: [
         {
           name: "Ultra-Luxe Beachfront Villa",
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           name: "Maasai Cultural Immersion",
-          image: "img/maasai-culture.jpg",
+          image: "img/maasai-culture.jpeg",
           description: "Experience Maasai traditions, village visits, and traditional meals with local guides.",
           price: "$400 / Person",
           location: "Maasai Village"
@@ -137,14 +137,14 @@ document.addEventListener("DOMContentLoaded", () => {
       packages: [
         {
           name: "Luxury Lakeside Lodge Stay",
-          image: "img/naivasha-lodge.jpg",
+          image: "img/naivasha-lodge.jpeg",
           description: "Stay in premium lodges with lake views, gourmet dining, and guided nature walks.",
           price: "$700 / Night",
           location: "Lake Naivasha"
         },
         {
           name: "Crescent Island Walking Safari",
-          image: "img/crescent-island.jpg",
+          image: "img/crescent-island.jpeg",
           description: "Explore this unique wildlife sanctuary on foot with giraffes, zebras, and antelopes roaming freely.",
           price: "$150 / Person",
           location: "Crescent Island Game Sanctuary"
