@@ -18,7 +18,7 @@ const travelPackages = {
     },
     {
       name: "Luxury Safari at Emakoko Lodge",
-      image: "img/emakoko.jpg",
+      image: "img/emakoko.png",
       description: "Stay in a riverside luxury lodge inside Nairobi National Park. Enjoy game drives, massages, and fine dining.",
       price: "$1,400 / Night",
       location: "Inside Nairobi National Park"
@@ -27,21 +27,21 @@ const travelPackages = {
   "mombasa": [
     {
       name: "Vipingo Ridge Getaway",
-      image: "img/vipingo.jpg",
+      image: "img/diani-villa.jpg",
       description: "A luxury villa stay at the stunning Vipingo Ridge with private beach access and golf course views.",
       price: "$720 / Night",
       location: "Vipingo Ridge, Kilifi"
     },
     {
       name: "Mombasa Sunset Dhow Cruise",
-      image: "img/dhow.jpg",
+      image: "img/diani.jpeg",
       description: "Enjoy an enchanting cruise in a traditional dhow with Swahili dinner and coastal music.",
       price: "$95 / Person",
       location: "Tudor Creek, Mombasa"
     },
     {
       name: "Diani Skydiving Adventure",
-      image: "img/skydiving.jpg",
+      image: "diani-skydiving.jpg",
       description: "Experience the thrill of skydiving over Diani Beach with a professional instructor.",
       price: "$400 / Jump",
       location: "Ukunda Airstrip, Diani"
@@ -50,21 +50,21 @@ const travelPackages = {
   "naivasha": [
     {
       name: "Naivasha Hot Air Balloon Safari",
-      image: "img/balloon.jpg",
+      image: "img/hells-gate.jpg",
       description: "Glide over Lake Naivasha and spot flamingos and hippos from above. Includes bush breakfast.",
       price: "$380 / Person",
       location: "Naivasha Conservancy"
     },
     {
       name: "Luxury Camp at Lake Oloiden",
-      image: "img/oloiden.jpg",
+      image: "img/naivasha-lodge.jpeg",
       description: "Stay at a lakeside eco-camp with sunset views and private boat rides.",
       price: "$250 / Night",
       location: "Lake Oloiden, Naivasha"
     },
     {
       name: "Crescent Island Guided Walking Safari",
-      image: "img/crescent.jpg",
+      image: "img/crescent-island.jpeg",
       description: "Walk among zebras, giraffes, and gazelles with a professional guide. Great for photographers.",
       price: "$40 / Person",
       location: "Crescent Island, Naivasha"
@@ -73,21 +73,21 @@ const travelPackages = {
   "kisumu": [
     {
       name: "Luxury Lake Victoria Sunset Cruise",
-      image: "img/victoria-cruise.jpg",
+      image: "img/dunga-cruise.jpg",
       description: "Relax on a luxury boat with snacks, wine, and a live band as you watch the sun set over the lake.",
       price: "$75 / Person",
       location: "Kisumu Yacht Club"
     },
     {
       name: "Hippo Point Retreat",
-      image: "img/hippo-point.jpg",
+      image: "img/kisumu-lodge.jpg",
       description: "Eco-lodge experience on a private peninsula with yoga, organic dining, and nature walks.",
       price: "$600 / Night",
       location: "Hippo Point, Kisumu"
     },
     {
       name: "Impala Sanctuary Luxury Walk & Picnic",
-      image: "img/impala.jpg",
+      image: "img/impala-sanctuary.jpg",
       description: "Guided walk through the Impala Sanctuary followed by a lakeside gourmet picnic.",
       price: "$65 / Person",
       location: "Impala Park, Kisumu"
