@@ -1,5 +1,3 @@
-// destination.js
-
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const placeKey = urlParams.get("place");
@@ -8,74 +6,87 @@ document.addEventListener("DOMContentLoaded", () => {
     "nairobi": {
       title: "Nairobi - The Heartbeat of Kenya",
       description: `
-        Nairobi is Kenya’s capital and largest city. Explore national parks, modern culture, nightlife, and the only city with a safari park inside it — Nairobi National Park.
+        Nairobi, the vibrant capital of Kenya, is a modern city with unmatched wildlife access. Imagine sipping cocktails at a rooftop bar with giraffes roaming nearby, or experiencing world-class museums, cuisine, and luxury shopping, all just minutes from Nairobi National Park. Nairobi blends raw African beauty with luxurious urban living, offering travelers a truly unique experience.
       `,
-      howToReach: "Fly into Jomo Kenyatta International Airport. Local taxis or Uber are readily available.",
-      image: "img/nairobi.jpg"
+      howToReach: "Fly into Jomo Kenyatta International Airport. Uber and private car pickups available.",
+      image: "img/nairobi.jpg",
+      packages: [
+        {
+          name: "Giraffe Manor Experience",
+          image: "img/giraffe-manor.jpg",
+          description: "Stay in a luxury colonial-style manor where giraffes visit your breakfast table. Includes full-board and private game drives.",
+          price: "$1,250 / Night",
+          location: "Lang’ata, Nairobi"
+        },
+        {
+          name: "Nairobi Helicopter City Tour",
+          image: "img/heli-tour.jpg",
+          description: "A premium chopper ride over Nairobi National Park and the city skyline. Champagne included.",
+          price: "$850 / Person",
+          location: "Wilson Airport, Nairobi"
+        },
+        {
+          name: "Luxury Safari at Emakoko Lodge",
+          image: "img/emakoko.jpg",
+          description: "Stay in a riverside luxury lodge inside Nairobi National Park. Enjoy game drives, massages, and fine dining.",
+          price: "$1,400 / Night",
+          location: "Inside Nairobi National Park"
+        }
+      ]
     },
-    "mombasa": {
-      title: "Mombasa - Coastal Charm and Swahili Culture",
-      description: `
-        Mombasa is a coastal paradise famous for its white sandy beaches, historical forts, and rich Swahili culture. Enjoy snorkeling, dhow rides, and vibrant nightlife.
-      `,
-      howToReach: "Fly into Moi International Airport or take the SGR train from Nairobi.",
-      image: "img/mombasa.jpg"
-    },
-    "diani": {
-      title: "Diani Beach - Serenity by the Sea",
-      description: `
-        Diani is one of Africa’s top beach destinations, offering crystal clear waters, coral reefs, skydiving, and top-tier resorts.
-      `,
-      howToReach: "Fly into Ukunda Airstrip or drive from Mombasa (about 45 minutes).",
-      image: "img/diani.jpg"
-    },
-    "maasai-mara": {
-      title: "Maasai Mara - The Ultimate Safari Experience",
-      description: `
-        Home of the Great Migration, Maasai Mara is the crown jewel of Kenya’s wildlife parks. See lions, elephants, cheetahs, and more in their natural habitat.
-      `,
-      howToReach: "Fly into Mara airstrips or drive (~5-6 hours) from Nairobi.",
-      image: "img/maasai-mara.jpg"
-    },
-    "naivasha": {
-      title: "Naivasha - Lakeside Getaway",
-      description: `
-        Naivasha offers freshwater adventures, boat rides, Crescent Island walks with giraffes, and Hell's Gate hiking and biking trails.
-      `,
-      howToReach: "Only 1.5 hours from Nairobi by car or shuttle.",
-      image: "img/naivasha.jpg"
-    },
-    "kisumu": {
-      title: "Kisumu - Lake Victoria's Gem",
-      description: `
-        Kisumu is known for its waterfront charm, fishing culture, and peaceful lakeside sunsets. Visit Dunga Beach, Impala Sanctuary, and the museum.
-      `,
-      howToReach: "Fly from Nairobi to Kisumu International Airport or take a long-distance bus (~7 hrs).",
-      image: "img/kisumu.jpg"
-    }
+    // Add other destinations here with the same structure...
   };
 
   const destination = destinations[placeKey];
 
+  const container = document.getElementById("destination-content");
+
   if (!destination) {
     document.getElementById("destination-title").textContent = "Destination Not Found";
-    document.getElementById("destination-content").innerHTML = "<p>Sorry, we couldn't find that destination. Please go back and choose a valid place.</p>";
+    container.innerHTML = "<p>Sorry, we couldn't find that destination. Please go back and choose a valid place.</p>";
     return;
   }
 
-  // Set the title
   document.getElementById("destination-title").textContent = destination.title;
 
-  // Set the content
-  document.getElementById("destination-content").innerHTML = `
-    <img src="${destination.image}" alt="${destination.title}" style="width:100%; max-height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 20px;">
-    <section>
-      <h2>Description</h2>
-      <p>${destination.description}</p>
-    </section>
-    <section>
-      <h2>How to Reach</h2>
-      <p>${destination.howToReach}</p>
+  const hero = `
+    <div class="text-center mb-5">
+      <img src="${destination.image}" alt="${destination.title}" class="img-fluid hero-img">
+    </div>
+    <section class="mb-5">
+      <h2 class="section-title">Description</h2>
+      <p class="fs-5">${destination.description}</p>
+      <h2 class="section-title">How to Reach</h2>
+      <p class="fs-5">${destination.howToReach}</p>
     </section>
   `;
+
+  const packages = destination.packages.map(pkg => `
+    <div class="col-md-4 mb-4">
+      <div class="card package-card h-100">
+        <img src="${pkg.image}" class="card-img-top" alt="${pkg.name}">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">${pkg.name}</h5>
+          <p class="card-text">${pkg.description}</p>
+          <div class="mt-auto">
+            <p class="fw-bold mb-1 text-primary">${pkg.price}</p>
+            <p class="text-muted">${pkg.location}</p>
+            <a href="#" class="btn btn-dark w-100 mt-2">Explore Package</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join("");
+
+  const packageSection = `
+    <section>
+      <h2 class="section-title">Premium Packages</h2>
+      <div class="row">
+        ${packages}
+      </div>
+    </section>
+  `;
+
+  container.innerHTML = hero + packageSection;
 });
+
