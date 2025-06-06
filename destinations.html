@@ -120,14 +120,41 @@
             </div>
         </div>
       <h1 id="destination-title">Loading...</h1>
+          <style>
+    .hero-img {
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .package-card {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    .package-card:hover {
+      transform: scale(1.02);
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+  </style>
+        
         <!-- Header End -->
   <script defer src="destination.js"></script>
 </head>
-<body>
-  
-  <main id="destination-content" class="container">
-    <!-- Content dynamically inserted by JS -->
-  </main>
+<body class="bg-light text-dark">
+
+  <div class="container mt-4">
+    <h1 id="destination-title" class="display-4 fw-bold text-center mb-5">Loading...</h1>
+
+    <main id="destination-content">
+      <!-- Dynamic content will be injected here -->
+    </main>
+  </div>
+    
         <!-- Footer Start -->
         <div class="container-fluid footer py-5">
             <div class="container py-5">
